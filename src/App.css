@@ -1,0 +1,138 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: none; /* Reset background on body */
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column; /* Column layout for navbar, content, and footer */
+  position: relative;
+  overflow: hidden; /* Prevent scrollbars if needed */
+}
+
+/* Background image with reduced opacity */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/background.jpg"); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6; /* Adjust this value for less opacity (0.0 to 1.0) */
+  z-index: -1; /* Place the background behind the content */
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for content */
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow around the container */
+  width: 100%;
+  max-width: 400px; /* Ensures the container is not too wide */
+  margin: auto; /* Centers the content vertically and horizontally */
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.weather-card {
+  display: inline-block;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent card background */
+  color: white;
+  text-align: center;
+  width: 300px;
+}
+
+.weather-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+}
+/* src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: none; /* Reset background on body */
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column; /* Column layout for navbar, content, and footer */
+  position: relative;
+  overflow: hidden; /* Prevent scrollbars if needed */
+}
+
+/* Background image with reduced opacity */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/background.jpg"); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6; /* Adjust this value for less opacity (0.0 to 1.0) */
+  z-index: -1; /* Place the background behind the content */
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for content */
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow around the container */
+  width: 100%;
+  max-width: 400px; /* Ensures the container is not too wide */
+  margin: 60px auto; /* Add top margin equal to navbar height */
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+/* Rest of your styles remain unchanged */
