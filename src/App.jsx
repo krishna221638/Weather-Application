@@ -13,7 +13,7 @@ const App = () => {
 
   const fetchWeather = async (city) => {
     try {
-      const apiKey = "420e5cc9baa405a371d0f4ae0f7792a2";
+      const apiKey = "API KEY";
       const response = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
       );
